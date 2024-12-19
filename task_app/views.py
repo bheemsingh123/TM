@@ -26,7 +26,7 @@ def register(request):
   
 def login_user(request):
     if request.user.is_authenticated:
-        return render(request, 'home.html')
+        return render(request, 'index.html')
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
