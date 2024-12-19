@@ -10,7 +10,7 @@ from . models import Task
 from django.http import JsonResponse
 
 def home(request): 
-    return render(request, 'home.html')
+    return render(request, 'index.html')
  
 def register(request):
     if request.method == 'POST':
